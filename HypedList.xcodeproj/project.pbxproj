@@ -11,6 +11,9 @@
 		DB2DB583259D556A0006A63C /* HypedListTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DB582259D556A0006A63C /* HypedListTabView.swift */; };
 		DB2DB585259D556D0006A63C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2DB584259D556D0006A63C /* Assets.xcassets */; };
 		DB2DB588259D556D0006A63C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2DB587259D556D0006A63C /* Preview Assets.xcassets */; };
+		DB2DB593259D585E0006A63C /* UpcomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DB592259D585E0006A63C /* UpcomingView.swift */; };
+		DB2DB596259D58C10006A63C /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DB595259D58C10006A63C /* DiscoverView.swift */; };
+		DB2DB599259D58DE0006A63C /* PastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DB598259D58DE0006A63C /* PastView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		DB2DB584259D556D0006A63C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB2DB587259D556D0006A63C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB2DB589259D556D0006A63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB2DB592259D585E0006A63C /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingView.swift; sourceTree = "<group>"; };
+		DB2DB595259D58C10006A63C /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		DB2DB598259D58DE0006A63C /* PastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				DB2DB580259D556A0006A63C /* HypedListApp.swift */,
-				DB2DB582259D556A0006A63C /* HypedListTabView.swift */,
+				DB2DB591259D58410006A63C /* Views */,
 				DB2DB584259D556D0006A63C /* Assets.xcassets */,
 				DB2DB589259D556D0006A63C /* Info.plist */,
 				DB2DB586259D556D0006A63C /* Preview Content */,
@@ -67,6 +73,17 @@
 				DB2DB587259D556D0006A63C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB2DB591259D58410006A63C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB2DB582259D556A0006A63C /* HypedListTabView.swift */,
+				DB2DB592259D585E0006A63C /* UpcomingView.swift */,
+				DB2DB595259D58C10006A63C /* DiscoverView.swift */,
+				DB2DB598259D58DE0006A63C /* PastView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +157,9 @@
 			files = (
 				DB2DB583259D556A0006A63C /* HypedListTabView.swift in Sources */,
 				DB2DB581259D556A0006A63C /* HypedListApp.swift in Sources */,
+				DB2DB593259D585E0006A63C /* UpcomingView.swift in Sources */,
+				DB2DB596259D58C10006A63C /* DiscoverView.swift in Sources */,
+				DB2DB599259D58DE0006A63C /* PastView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
