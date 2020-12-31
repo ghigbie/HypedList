@@ -2,7 +2,13 @@ import SwiftUI
 
 struct UpcomingView: View {
     var body: some View {
-        Text("Upcming View")
+        Text("Upcoming View")
+            .navigationTitle("Upcoming")
+            .navigationBarItems(trailing:
+                Button(action: {}){
+                    Image(systemName: "calendar.badge.plus")
+                        .font(.title)
+                })
     }
 }
 
