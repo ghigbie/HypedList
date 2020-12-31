@@ -11,11 +11,20 @@ struct HypedListTabView: View {
     var body: some View {
         TabView{
             UpcomingView()
-                .tabItem { Text("Upcoming") }
+                .tabItem {
+                    Image(systemName: "calendar")
+                    Text("Upcoming")
+                }
             DiscoverView()
-                .tabItem { Text("Discover") }
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                    Text("Discover")
+                }
             PastView()
-                .tabItem { Text("Past")}
+                .tabItem {
+                    Image(systemName: "gobackward")
+                    Text("Past")
+                }
         }
     }
 }
