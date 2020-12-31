@@ -1,0 +1,17 @@
+//
+//  HypedEvent.swift
+//  HypedList
+//
+//  Created by George Higbie on 12/30/20.
+//
+
+import Foundation
+import SwiftUI
+
+class HypedEvent {
+    var date: Date = Date()
+    var title: String = ""
+    var url: String = ""
+    var color: Color = Color.purple
+    var imageData: Data?
+}
