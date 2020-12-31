@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DB2DB581259D556A0006A63C /* HypedListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DB580259D556A0006A63C /* HypedListApp.swift */; };
-		DB2DB583259D556A0006A63C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DB582259D556A0006A63C /* ContentView.swift */; };
+		DB2DB583259D556A0006A63C /* HypedListTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DB582259D556A0006A63C /* HypedListTabView.swift */; };
 		DB2DB585259D556D0006A63C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2DB584259D556D0006A63C /* Assets.xcassets */; };
 		DB2DB588259D556D0006A63C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2DB587259D556D0006A63C /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		DB2DB57D259D556A0006A63C /* HypedList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypedList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2DB580259D556A0006A63C /* HypedListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedListApp.swift; sourceTree = "<group>"; };
-		DB2DB582259D556A0006A63C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB2DB582259D556A0006A63C /* HypedListTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedListTabView.swift; sourceTree = "<group>"; };
 		DB2DB584259D556D0006A63C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB2DB587259D556D0006A63C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB2DB589259D556D0006A63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				DB2DB580259D556A0006A63C /* HypedListApp.swift */,
-				DB2DB582259D556A0006A63C /* ContentView.swift */,
+				DB2DB582259D556A0006A63C /* HypedListTabView.swift */,
 				DB2DB584259D556D0006A63C /* Assets.xcassets */,
 				DB2DB589259D556D0006A63C /* Info.plist */,
 				DB2DB586259D556D0006A63C /* Preview Content */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB2DB583259D556A0006A63C /* ContentView.swift in Sources */,
+				DB2DB583259D556A0006A63C /* HypedListTabView.swift in Sources */,
 				DB2DB581259D556A0006A63C /* HypedListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
