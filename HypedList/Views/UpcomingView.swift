@@ -1,14 +1,19 @@
 import SwiftUI
 
 struct UpcomingView: View {
+    @State var showingCreateView = false
+    
     var body: some View {
         Text("Upcoming View")
             .navigationTitle("Upcoming")
             .navigationBarItems(trailing:
-                Button(action: {}){
+                Button(action: {
+                    showingCreateView = true
+                }){
                     Image(systemName: "calendar.badge.plus")
                         .font(.title)
                 })
+            .sheet(isPresented: $showingCreateView, content: {CreateHypedEvent()})
     }
 }
 
