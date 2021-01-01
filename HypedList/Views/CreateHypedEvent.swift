@@ -6,9 +6,18 @@ struct CreateHypedEvent: View {
     @StateObject var hypedEevent: HypedEvent = HypedEvent()
     
     var body: some View {
-        Text("Create")
-            .font(.title)
-            .foregroundColor(.blue)
+        Form{
+            Section{
+            TextField("Name of Event", text: $hypedEevent.title)
+                .autocapitalization(.words)
+            }
+            
+            Section{
+                DatePicker("Date", selection: $hypedEevent.date, displayedComponents: [.date, .hourAndMinute])
+                    .datePickerStyle(GraphicalDatePickerStyle())
+            }
+            
+        }
     }
 }
 
