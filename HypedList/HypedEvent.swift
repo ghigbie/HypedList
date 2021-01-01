@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class HypedEvent {
+class HypedEvent: ObservableObject {
     var date: Date = Date()
     var title: String = ""
     var url: String = ""
