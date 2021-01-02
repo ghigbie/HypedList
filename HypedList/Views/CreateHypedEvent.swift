@@ -4,6 +4,7 @@ import SwiftUI
 struct CreateHypedEvent: View {
     
     @StateObject var hypedEevent: HypedEvent = HypedEvent()
+    @State var showTime = false
     
     var body: some View {
         Form{
@@ -15,8 +16,11 @@ struct CreateHypedEvent: View {
             
             Section{
                 FormLabelView(text: "Date", systemName: "calendar", backgroundColor: .purple)
-                DatePicker("Date", selection: $hypedEevent.date, displayedComponents: [.date, .hourAndMinute])
+                DatePicker("Date", selection: $hypedEevent.date, displayedComponents: showTime ? [.date, .hourAndMinute] : [.date])
                     .datePickerStyle(GraphicalDatePickerStyle())
+                Toggle(isOn: $showTime){
+                    FormLabelView(text: "Time", systemName: "clock.fill", backgroundColor: .purple)
+                }
             }
             
             Section{
