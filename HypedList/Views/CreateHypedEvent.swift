@@ -8,21 +8,13 @@ struct CreateHypedEvent: View {
     var body: some View {
         Form{
             Section{
-                Label{
-                    Text("Title")
-                } icon: {
-                    Image(systemName: "keyboard")
-                        .padding(5)
-                        .background(Color.blue)
-                        .cornerRadius(7)
-                        .foregroundColor(.white)
-                    
-                }
-            TextField("Name of Event", text: $hypedEevent.title)
-                .autocapitalization(.words)
+                FormLabelView(text: "Title", systemName: "keyboard", backgroundColor: Color.blue)
+                TextField("Name of Event", text: $hypedEevent.title)
+                    .autocapitalization(.words)
             }
             
             Section{
+                FormLabelView(text: "Date", systemName: "calendar", backgroundColor: Color.purple)
                 DatePicker("Date", selection: $hypedEevent.date, displayedComponents: [.date, .hourAndMinute])
                     .datePickerStyle(GraphicalDatePickerStyle())
             }
