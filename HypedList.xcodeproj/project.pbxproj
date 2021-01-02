@@ -17,6 +17,7 @@
 		DB2DB59C259D87CE0006A63C /* CreateHypedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DB59B259D87CE0006A63C /* CreateHypedEvent.swift */; };
 		DB2DB59F259D889F0006A63C /* HypedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DB59E259D889F0006A63C /* HypedEvent.swift */; };
 		DB2DB5A225A02C8C0006A63C /* FormLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DB5A125A02C8C0006A63C /* FormLabelView.swift */; };
+		DB2DB5AA25A10A970006A63C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DB5A925A10A970006A63C /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		DB2DB59B259D87CE0006A63C /* CreateHypedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHypedEvent.swift; sourceTree = "<group>"; };
 		DB2DB59E259D889F0006A63C /* HypedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedEvent.swift; sourceTree = "<group>"; };
 		DB2DB5A125A02C8C0006A63C /* FormLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLabelView.swift; sourceTree = "<group>"; };
+		DB2DB5A925A10A970006A63C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				DB2DB598259D58DE0006A63C /* PastView.swift */,
 				DB2DB59B259D87CE0006A63C /* CreateHypedEvent.swift */,
 				DB2DB5A125A02C8C0006A63C /* FormLabelView.swift */,
+				DB2DB5A925A10A970006A63C /* ImagePicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				DB2DB583259D556A0006A63C /* HypedListTabView.swift in Sources */,
 				DB2DB581259D556A0006A63C /* HypedListApp.swift in Sources */,
 				DB2DB593259D585E0006A63C /* UpcomingView.swift in Sources */,
+				DB2DB5AA25A10A970006A63C /* ImagePicker.swift in Sources */,
 				DB2DB596259D58C10006A63C /* DiscoverView.swift in Sources */,
 				DB2DB59F259D889F0006A63C /* HypedEvent.swift in Sources */,
 				DB2DB599259D58DE0006A63C /* PastView.swift in Sources */,
