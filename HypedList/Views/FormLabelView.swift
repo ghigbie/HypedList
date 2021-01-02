@@ -22,7 +22,7 @@ struct FormLabelView: View {
 
 struct FormLabelView_Previews: PreviewProvider {
     static var previews: some View {
-        FormLabelView(text: "Test", systemName: "keyboard", backgroundColor: Color.red)
+        FormLabelView(text: "URL", systemName: "link", backgroundColor: .red)
             .previewLayout(.sizeThatFits)
     }
 }
