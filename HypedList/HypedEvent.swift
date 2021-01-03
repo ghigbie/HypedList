@@ -13,5 +13,5 @@ class HypedEvent: ObservableObject {
     var title: String = ""
     var url: String = ""
     var color: Color = Color.purple
-    var imageData: Data?
+    @Published var imageData: Data?
 }

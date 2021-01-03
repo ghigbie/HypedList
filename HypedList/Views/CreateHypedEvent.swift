@@ -9,6 +9,7 @@ struct CreateHypedEvent: View {
     
     var body: some View {
         Form{
+            
             Section{
                 FormLabelView(text: "Title", systemName: "keyboard", backgroundColor: .green)
                 TextField("Name of Event", text: $hypedEevent.title)
@@ -24,11 +25,36 @@ struct CreateHypedEvent: View {
                 }
             }
             
-            Button(action: { showImagePicker = true}){
-                Text("Pick Image")
+            Section {
+                if hypedEevent.imageData == nil {
+                    HStack {
+                        FormLabelView(text: "Image", systemName: "camera", backgroundColor: .pink)
+                        Spacer()
+                        Button(action: { showImagePicker = true}){
+                            Text("Pick Image")
+                        }
+                    }
+                }else{
+                    HStack {
+                        FormLabelView(text: "Image", systemName: "camera", backgroundColor: .pink)
+                        Spacer()
+                        Button(action: { hypedEevent.imageData = nil}){
+                            Text("Remome Image")
+                        }
+                    }
+                    Image("wwdc")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                    }
+            
+//            if hypedEevent.imageData != nil {
+//                Image(uiImage: UIImage(data: $hypedEevent.imageData!)!)
+//            }
             }.sheet(isPresented: $showImagePicker){
-                ImagePicker()
+                ImagePicker(imageData: $hypedEevent.imageData)
             }
+
+            
             
             Section{
                 ColorPicker(selection: $hypedEevent.color){
@@ -45,6 +71,7 @@ struct CreateHypedEvent: View {
         }
     }
 }
+
 
 struct CreateHypedEvent_Previews: PreviewProvider {
     static var previews: some View {
