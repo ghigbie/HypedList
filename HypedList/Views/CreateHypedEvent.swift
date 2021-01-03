@@ -26,7 +26,7 @@ struct CreateHypedEvent: View {
             }
             
             Section {
-                if hypedEevent.imageData == nil {
+                if hypedEevent.image() == nil {
                     HStack {
                         FormLabelView(text: "Image", systemName: "camera", backgroundColor: .pink)
                         Spacer()
@@ -40,16 +40,20 @@ struct CreateHypedEvent: View {
                         Spacer()
                         Button(action: { hypedEevent.imageData = nil}){
                             Text("Remome Image")
+                                .foregroundColor(.red)
                         }
+                        .buttonStyle(BorderlessButtonStyle())
                     }
-                    Image("wwdc")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
+                    Button(action: {
+                        showImagePicker = true
+                    }) {
+                        hypedEevent.image()!
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
                     }
+                    .buttonStyle(BorderlessButtonStyle())
+                }
             
-//            if hypedEevent.imageData != nil {
-//                Image(uiImage: UIImage(data: $hypedEevent.imageData!)!)
-//            }
             }.sheet(isPresented: $showImagePicker){
                 ImagePicker(imageData: $hypedEevent.imageData)
             }
