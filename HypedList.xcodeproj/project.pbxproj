@@ -18,6 +18,7 @@
 		DB2DB59F259D889F0006A63C /* HypedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DB59E259D889F0006A63C /* HypedEvent.swift */; };
 		DB2DB5A225A02C8C0006A63C /* FormLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DB5A125A02C8C0006A63C /* FormLabelView.swift */; };
 		DB2DB5AA25A10A970006A63C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DB5A925A10A970006A63C /* ImagePicker.swift */; };
+		DB85F10525A29AF100EABCCA /* HypedEventTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB85F10425A29AF100EABCCA /* HypedEventTileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		DB2DB59E259D889F0006A63C /* HypedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedEvent.swift; sourceTree = "<group>"; };
 		DB2DB5A125A02C8C0006A63C /* FormLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLabelView.swift; sourceTree = "<group>"; };
 		DB2DB5A925A10A970006A63C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		DB85F10425A29AF100EABCCA /* HypedEventTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedEventTileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				DB2DB59B259D87CE0006A63C /* CreateHypedEvent.swift */,
 				DB2DB5A125A02C8C0006A63C /* FormLabelView.swift */,
 				DB2DB5A925A10A970006A63C /* ImagePicker.swift */,
+				DB85F10425A29AF100EABCCA /* HypedEventTileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				DB2DB59F259D889F0006A63C /* HypedEvent.swift in Sources */,
 				DB2DB599259D58DE0006A63C /* PastView.swift in Sources */,
 				DB2DB5A225A02C8C0006A63C /* FormLabelView.swift in Sources */,
+				DB85F10525A29AF100EABCCA /* HypedEventTileView.swift in Sources */,
 				DB2DB59C259D87CE0006A63C /* CreateHypedEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

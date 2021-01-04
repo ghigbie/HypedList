@@ -5,13 +5,17 @@ struct UpcomingView: View {
     var hypedEvents: [HypedEvent] = []
     
     var body: some View {
-        VStack{
-            if(hypedEvents.count == 0 ){
-                Text("Nothing to look forward to 😢 \n Create an event or check out the Discover tab!")
-                    .bold()
-                    .multilineTextAlignment(.center)
-            }else{
-                // Text("Upcoming View")
+        ScrollView{
+            VStack{
+                if(hypedEvents.count == 0 ){
+                    Text("Nothing to look forward to 😢 \n Create an event or check out the Discover tab!")
+                        .bold()
+                        .multilineTextAlignment(.center)
+                }else{
+                    ForEach(hypedEvents) { hypedEvent in
+                        HypedEventTileView(hypedEvent: hypedEvent)
+                    }
+                }
             }
         }
         .navigationTitle("Upcoming")
