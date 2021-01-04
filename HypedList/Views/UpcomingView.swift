@@ -27,6 +27,16 @@ struct UpcomingView: View {
 
 struct UpcomingView_Previews: PreviewProvider {
     static var previews: some View {
-        UpcomingView(hypedEvents: [])
+        
+        Group {
+            NavigationView{
+                UpcomingView(hypedEvents: [testHypedEvent1, testHypedEvent2 ])
+            }
+            
+            NavigationView{
+                UpcomingView(hypedEvents: [])
+            }
+            
+        }
     }
 }
