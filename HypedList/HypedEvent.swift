@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import SwiftDate
 
 class HypedEvent: ObservableObject, Identifiable {
     var id = UUID().uuidString
@@ -24,6 +25,20 @@ class HypedEvent: ObservableObject, Identifiable {
         }
         return nil
     }
+    
+    func dateAsString() -> String {
+        let formatter = DateFormatter()
+        if date.compare(.isThisYear){
+            formatter.dateFormat = "MMM dd"
+        }else{
+            formatter.dateFormat = "MMM dd yyyy"
+        }
+        return formatter.string(from: date)
+    }
+    
+    func timeFromNow() -> String {
+        return date.toRelative()
+    }
 }
 
 var testHypedEvent1: HypedEvent{
@@ -37,7 +52,7 @@ var testHypedEvent1: HypedEvent{
     
     hypedEvent.title = "WWD 2021"
     hypedEvent.color = .green
-    hypedEvent.date = Date()
+    hypedEvent.date = Date() + 4.days
     hypedEvent.url = "apple.com"
     
     return hypedEvent
@@ -47,6 +62,6 @@ var testHypedEvent2: HypedEvent{
     let hypedEvent = HypedEvent()
     hypedEvent.title = "Trip to alpines"
     hypedEvent.color = .blue
-    hypedEvent.date = Date()
+    hypedEvent.date = Date() + 2.days
     return hypedEvent
 }

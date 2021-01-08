@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,8 @@
 		DB2DB5A225A02C8C0006A63C /* FormLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DB5A125A02C8C0006A63C /* FormLabelView.swift */; };
 		DB2DB5AA25A10A970006A63C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DB5A925A10A970006A63C /* ImagePicker.swift */; };
 		DB85F10525A29AF100EABCCA /* HypedEventTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB85F10425A29AF100EABCCA /* HypedEventTileView.swift */; };
+		DB85F10925A6BCB800EABCCA /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = DB85F10825A6BCB800EABCCA /* SwiftDate */; };
+		DB85F10C25A80BBB00EABCCA /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB85F10B25A80BBB00EABCCA /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,7 @@
 		DB2DB5A125A02C8C0006A63C /* FormLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLabelView.swift; sourceTree = "<group>"; };
 		DB2DB5A925A10A970006A63C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		DB85F10425A29AF100EABCCA /* HypedEventTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypedEventTileView.swift; sourceTree = "<group>"; };
+		DB85F10B25A80BBB00EABCCA /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB85F10925A6BCB800EABCCA /* SwiftDate in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +78,7 @@
 				DB2DB584259D556D0006A63C /* Assets.xcassets */,
 				DB2DB589259D556D0006A63C /* Info.plist */,
 				DB2DB586259D556D0006A63C /* Preview Content */,
+				DB85F10B25A80BBB00EABCCA /* DataController.swift */,
 			);
 			path = HypedList;
 			sourceTree = "<group>";
@@ -117,6 +122,9 @@
 			dependencies = (
 			);
 			name = HypedList;
+			packageProductDependencies = (
+				DB85F10825A6BCB800EABCCA /* SwiftDate */,
+			);
 			productName = HypedList;
 			productReference = DB2DB57D259D556A0006A63C /* HypedList.app */;
 			productType = "com.apple.product-type.application";
@@ -144,6 +152,9 @@
 				Base,
 			);
 			mainGroup = DB2DB574259D556A0006A63C;
+			packageReferences = (
+				DB85F10725A6BCB800EABCCA /* XCRemoteSwiftPackageReference "SwiftDate" */,
+			);
 			productRefGroup = DB2DB57E259D556A0006A63C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -175,6 +186,7 @@
 				DB2DB593259D585E0006A63C /* UpcomingView.swift in Sources */,
 				DB2DB5AA25A10A970006A63C /* ImagePicker.swift in Sources */,
 				DB2DB596259D58C10006A63C /* DiscoverView.swift in Sources */,
+				DB85F10C25A80BBB00EABCCA /* DataController.swift in Sources */,
 				DB2DB59F259D889F0006A63C /* HypedEvent.swift in Sources */,
 				DB2DB599259D58DE0006A63C /* PastView.swift in Sources */,
 				DB2DB5A225A02C8C0006A63C /* FormLabelView.swift in Sources */,
@@ -366,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB85F10725A6BCB800EABCCA /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB85F10825A6BCB800EABCCA /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB85F10725A6BCB800EABCCA /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB2DB575259D556A0006A63C /* Project object */;
 }
